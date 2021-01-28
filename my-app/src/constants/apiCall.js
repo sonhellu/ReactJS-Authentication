@@ -1,0 +1,1 @@
+export const URL = 'http://api.thuematbang24h.com/';
