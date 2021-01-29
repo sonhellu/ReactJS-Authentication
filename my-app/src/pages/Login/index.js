@@ -36,7 +36,7 @@ const Login = (props) => {
             setCookie("name", res.data.user.name)
           }
           console.log(cookie.name);
-          alert("Dang nhap thanh cong")
+          history.push("/")
         })
         .catch(() => {
           alert("Dang nhap that bai")
@@ -71,7 +71,6 @@ const Login = (props) => {
                     <div className="form-group">
                       <label >Password</label>
                       <input
-                        // ref={register({ required: true, maxLength: 20 })}
                         type="password"
                         className="form-control"
                         id="exampleInputPassword1"

@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Login from './pages/Login';
 import Register from './pages/Register'
+import Sidebar from './pages/Home/Sidebar';
 function App() {
   return (
       <Router>
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path='/register'>
             <Register/>
+          </Route>
+          <Route path='/'>
+            <Sidebar/>
           </Route>
         </Switch>
       </Router>
